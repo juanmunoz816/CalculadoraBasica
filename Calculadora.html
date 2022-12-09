@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script  defer src="js/form.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<section class="todo">
+    <div class="contenedor">
+        <div class="header">
+            <img src="img/logo.png" alt="" class="logo">
+            <h1>Calculadora Básica</h1>
+        </div>
+
+        <form name="calc">
+
+            <p>Ingresa un numerop</p>
+
+            <div class="principal">
+                <input type="text" class="text" name="operando1" value="0">
+                <input type="text" class="text" name="operando2" value="0">
+            </div>
+
+            <p>Haz una operación</p>
+
+            <div class="operaciones">
+                <input type="button" class="btn" value="+" onclick="calcula('+')">
+                <input type="button" class="btn" value="-" onclick="calcula('-')">
+                <input type="button" class="btn" value="x" onclick="calcula('*')">
+                <input type="button" class="btn" value="/" onclick="calcula('/')">
+            </div>
+
+            <p>Mira el resultado</p>
+
+            <div class="resultado">
+                <input type="text" class="final text" name="resultado" value="0" readonly disabled>
+            </div>
+
+            <div class="resultado">
+
+                <input type="button" class="btn" value="Reset" onclick="reset()">
+
+            </div>
+            
+
+        </form>
+    </div>
+</section>
+</body>
+</html>
